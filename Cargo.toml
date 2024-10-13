@@ -14,6 +14,7 @@ include = ["src/*.rs", "LICENSE-MIT", "LICENSE-APACHE", "Cargo.toml"]
 egui = { path = "../egui/crates/egui" }
 serde_json = { version = "1", optional = true }
 simd-json = { version = "0.13", optional = true }
+gr = { path = "../crates/gr" }
 
 [dev-dependencies]
 eframe = "0.30"
