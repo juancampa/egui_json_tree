@@ -144,7 +144,7 @@ impl ToJsonTreeValue for gr::Scalar {
                 ExpandableType::Object,
             ),
             gr::Scalar::Error(err) => JsonTreeValue::Base(self, err, BaseValueType::String),
-            gr::Scalar::Undefined => JsonTreeValue::Base(self, self, BaseValueType::Null),
+            gr::Scalar::Unavailable => JsonTreeValue::Base(self, self, BaseValueType::Null),
             gr::Scalar::Node(_node_key, gref) => {
                 JsonTreeValue::Base(self, gref, BaseValueType::String)
             }
